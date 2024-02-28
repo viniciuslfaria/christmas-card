@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Christmas Card</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Merry Christmas</h2>
+            <a href="https://github.com/viniciuslfaria" class="buy">Happy New Year</a>
+            <img width="220" src="./src/assets/3d-icon-christmas-tree-and-gift-box.png" alt="Árvore de Natal"
+                class="product">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./src/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.5,
+        });
+    </script>
+</body>
+
+</html>
